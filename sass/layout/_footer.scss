@@ -1,0 +1,122 @@
+footer {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-blocks {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer-blocks-navigation {
+  margin-right: 70px;
+}
+
+.footer-address-link {
+  display: block;
+}
+.footer-address-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.company-address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--background-color);
+  letter-spacing: 0.03em;
+}
+.hover-focus {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--acsent-color);
+  }
+}
+
+.company-contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-blocks-conects {
+  margin-right: 93px;
+}
+.footer-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
+.fotter-block-network {
+  display: flex;
+}
+.fotter-network-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--acsent-color);
+  }
+}
+
+.fotter-list-network:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-mail-block {
+  display: flex;
+}
+.footer-join-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
+
+.footer-input {
+  outline: none;
+  padding-left: 16px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25px;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-color: var(--acsent-color);
+  }
+}
