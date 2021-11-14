@@ -1,7 +1,9 @@
 .products-sections {
   padding-bottom: 94px;
   text-align: center;
-  /* display: flex; */
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .products-sections__title {
   margin-bottom: 50px;
