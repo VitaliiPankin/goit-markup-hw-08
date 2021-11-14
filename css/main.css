@@ -77,7 +77,13 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 200px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 480px) {
   .container {
     width: 480px;
   }
