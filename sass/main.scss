@@ -1,9 +1,3 @@
-// @import "./header";
-// @import "./logo";
-
-// @import "./hero";
-// @import "./modal";
-
 //UTILS
 @import "./utils/varialbles";
 @import "./utils/visually-hidden";
@@ -14,16 +8,17 @@
 //COMPONENTS
 @import "./components/container";
 @import "./components/button";
-
+@import "./components/btn-burger";
 @import "./components/logo";
 
 //LAYOUT
-@import "./layout/modal";
+
 @import "./layout/header";
-@import "./layout/hero";
-@import "./layout/peculiarities-sections";
-@import "./layout/products-sections";
-@import "./layout//command-sections";
-@import "./layout/clients-sections";
-@import "./layout/footer";
-@import "./layout/portfolio";
+// @import "./layout/hero";
+// @import "./layout/peculiarities-sections";
+// @import "./layout/products-sections";
+// @import "./layout//command-sections";
+// @import "./layout/clients-sections";
+// @import "./layout/footer";
+// @import "./layout/portfolio";
+@import "./layout/modal";
