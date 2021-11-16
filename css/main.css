@@ -535,38 +535,17 @@ img {
 @media screen and (min-width: 768px) {
   .peculiarities-sections {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .peculiarities-sections {
     display: flex;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .peculiarities-sections__link:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .peculiarities-sections__link:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .peculiarities-sections__link:nth-last-child(even) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .peculiarities-sections__link:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+    justify-content: center;
+    margin: -15px;
   }
 }
 
@@ -575,15 +554,23 @@ img {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .peculiarities-sections__link:not(:last-child) {
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .peculiarities-sections__link {
-    width: 354px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .peculiarities-sections__link {
-    width: 270px;
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 
@@ -597,6 +584,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .peculiarities-sections__title {
+    justify-content: flex-start;
+  }
 }
 
 .peculiarities-sections__svg {
@@ -794,7 +787,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -943,8 +936,8 @@ textarea {
   cursor: pointer;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
