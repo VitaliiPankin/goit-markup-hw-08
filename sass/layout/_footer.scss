@@ -4,13 +4,35 @@ footer {
   padding-bottom: 60px;
 }
 .footer-blocks {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+.our-footer-blocks {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 .footer-blocks-navigation {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    display: block;
+  }
 }
 
 .footer-address-link {
@@ -31,6 +53,10 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 .company-address-link {
   font-size: 14px;
@@ -58,6 +84,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 .footer-title {
   display: block;
@@ -101,8 +131,26 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 .footer-mail-block {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 30px);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .footer-join-title {
   display: block;
@@ -118,6 +166,13 @@ footer {
 
 .footer-input {
   width: calc(100% - 30px);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
   outline: none;
   margin-bottom: 20px;
   padding-left: 16px;
