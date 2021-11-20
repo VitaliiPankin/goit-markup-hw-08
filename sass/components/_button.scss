@@ -59,9 +59,28 @@
   letter-spacing: 0.03em;
 }
 .portfolio-buttons {
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    padding-bottom: -7.5px;
+    padding-top: -7.5px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+}
+.portfolio-buttons-lists {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 7.5px;
+    padding-top: 7.5px;
+  }
 }
 .portfolio-buttons-lists:not(:last-child) {
   margin-right: 8px;
