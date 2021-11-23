@@ -78,6 +78,10 @@
   }
 
   .hero-text {
+    @media screen and (max-width: 479px) {
+      width: calc(100vw / 1.33);
+      font-size: calc(100vw / 18.4);
+    }
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;

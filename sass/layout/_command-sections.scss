@@ -94,3 +94,7 @@
     fill: var(--logo-color-studio-footer);
   }
 }
+
+.command-list-link:not(:last-child) {
+  margin-right: 10px;
+}

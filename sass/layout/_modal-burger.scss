@@ -1,4 +1,5 @@
 .mobile-menu {
+  overflow: auto;
   position: fixed;
   z-index: 100;
 
@@ -22,7 +23,9 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  overflow-y: scroll;
 }
+
 .btn-burger__close {
   position: absolute;
   display: block;
@@ -39,9 +42,16 @@
   }
 }
 .site-nav__mobile {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 200px;
+    margin-bottom: calc(100vh / 2.63);
+  }
   margin-bottom: 302px;
 }
 .page-link__m {
+  @media screen and (max-width: 479px) {
+    font-size: calc(100vw / 12);
+  }
   font-size: 40px;
   line-height: calc(47 / 40);
   text-align: center;
@@ -56,9 +66,15 @@
   color: var(--acsent-color);
 }
 .site-nav__mobile_list:not(:last-child) {
+  @media screen and (max-width: 479px) {
+    margin-bottom: calc(100vh / 24.875);
+  }
   margin-bottom: 32px;
 }
 .auth-nav__m-tel {
+  @media screen and (max-width: 479px) {
+    font-size: calc(100vw / 14);
+  }
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -70,13 +86,22 @@
   color: var(--acsent-color);
 }
 .auth-nav__mobile-menu {
+  @media screen and (max-width: 479px) {
+    margin-bottom: calc(100vh / 12);
+  }
   display: block;
   margin-bottom: 64px;
 }
 .auth-nav__mobile-menu > li:not(:last-child) {
+  @media screen and (max-width: 479px) {
+    margin-bottom: calc(100vh / 24.875);
+  }
   margin-bottom: 32px;
 }
 .auth-nav__m-meil {
+  @media screen and (max-width: 479px) {
+    font-size: calc(100vw / 20);
+  }
   font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
@@ -96,6 +121,9 @@
   }
 }
 .mobile-network_a {
+  @media screen and (max-width: 479px) {
+    font-size: calc(100vw / 26.6);
+  }
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);

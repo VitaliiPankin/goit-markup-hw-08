@@ -4,6 +4,9 @@ footer {
   padding-bottom: 60px;
 }
 .footer-blocks {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
     justify-content: space-around;
@@ -29,12 +32,18 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     display: block;
   }
 }
 
+.footer-address {
+}
 .footer-address-link {
   display: flex;
 }
@@ -45,9 +54,6 @@ footer {
   }
 }
 .footer-address-link:last-child {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 .footer-address-list {
   display: flex;
@@ -102,9 +108,6 @@ footer {
 }
 .fotter-block-network {
   display: flex;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 .fotter-network-link {
   width: 44px;
