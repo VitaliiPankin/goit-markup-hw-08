@@ -22,9 +22,9 @@
   transform: translate(-50%, -50%);
 
   @media screen and (max-width: 767px) {
+    max-width: 450px;
+
     width: calc(100vw - 30px);
-    height: calc(100vh - 30px);
-    overflow: auto;
   }
   @media screen and (min-width: 768px) {
     width: 450px;
@@ -193,7 +193,7 @@ textarea {
 
   color: var(--primery-text-color);
   @media screen and (max-width: 479px) {
-    font-size: calc(100vw / 40);
+    font-size: 12px;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -202,8 +202,12 @@ textarea {
     line-height: 1.71;
   }
 }
+.policy-label > p {
+  display: flex;
+  align-items: center;
+}
+
 .policy-link {
-  margin-left: 3px;
   text-decoration: underline;
   color: var(--acsent-color);
 }
