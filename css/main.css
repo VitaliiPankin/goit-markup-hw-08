@@ -1536,7 +1536,7 @@ textarea {
   }
 }
 
-.policy-label > p {
+.policy-label__block {
   display: flex;
   align-items: center;
 }
