@@ -1552,7 +1552,6 @@ textarea {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  overflow-y: scroll;
 }
 
 .btn-burger__close {
